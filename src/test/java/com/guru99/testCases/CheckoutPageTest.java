@@ -12,7 +12,7 @@ public class CheckoutPageTest extends CommonMethods{
 		CommonMethods.entertext(checkoutpage.Password, "pranitha");
 		CommonMethods.justclick(checkoutpage.Loginbutton);
 		CommonMethods.justclick(homepage.TV);
-    	        CommonMethods.justclick(homepage.lgtvwishlist);
+    	CommonMethods.justclick(homepage.lgtvwishlist);
 		CommonMethods.justclick(checkoutpage.MyWishlist);
 		CommonMethods.justclick(checkoutpage.Addtocart);
 		CommonMethods.selectname(checkoutpage.countryinest, "United states");

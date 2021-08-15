@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.guru99.utils.CommonMethods;
 
 public class CartPageTest extends CommonMethods{
-	
+	// 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
 	@Test
 	public void Testcase_001() {
 		CommonMethods.justclick(homepage.Mobile);
