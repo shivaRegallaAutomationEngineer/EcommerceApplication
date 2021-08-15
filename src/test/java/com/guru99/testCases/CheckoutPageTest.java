@@ -7,6 +7,7 @@ import com.guru99.utils.CommonMethods;
 public class CheckoutPageTest extends CommonMethods{
 	@Test
 	public void Testcase_006() {
+		//working on this ---by anusha
 		CommonMethods.justclick(checkoutpage.myaccountlink);
 		CommonMethods.entertext(checkoutpage.Emailadress, "shiva21@gmail.com");
 		CommonMethods.entertext(checkoutpage.Password, "pranitha");
