@@ -57,7 +57,14 @@ public class CheckoutPageElements extends Baseclass{
 	@FindBy(xpath="//button[@title='Place Order']")
 	public WebElement Placeorder;
 	@FindBy(xpath="//h2[text()='Thank you for your purchase!']")
+	
 	public WebElement Textgerated;
+@FindBy(xpath="//label[@for=\"s_method_flatrate_flatrate\"]")
+public WebElement flatrate;
+@FindBy(xpath="//table[@id='shopping-cart-totals-table']//tbody//tr[2]//td[2]//span")
+public WebElement priceValue;
+
+
 	public CheckoutPageElements() {
 		PageFactory.initElements(driver, this);
 		

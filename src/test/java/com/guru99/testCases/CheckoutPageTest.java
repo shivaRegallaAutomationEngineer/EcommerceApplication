@@ -1,5 +1,6 @@
 package com.guru99.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.guru99.utils.CommonMethods;
@@ -19,9 +20,24 @@ public class CheckoutPageTest extends CommonMethods{
 		CommonMethods.selectname(checkoutpage.Stateinest, "New York");
 		CommonMethods.entertext(checkoutpage.postcode, "542896");
 		CommonMethods.justclick(checkoutpage.Estimate);
-		CommonMethods.justclick(checkoutpage.Shippingcostflatrate);
+		String flatvalue=CommonMethods.getText(checkoutpage.flatrate);
+		System.out.println(flatvalue);
+		Assert.assertEquals(flatvalue, "Fixed - $5.00","values are not matching");
+		
+		
+		
+//		CommonMethods.justclick(checkoutpage.Shippingcostflatrate);
 		CommonMethods.justclick(checkoutpage.Updatetotal);
+		String priceValue=CommonMethods.getText(checkoutpage.priceValue);
+		//System.out.println(priceValue);
+		String expectedPriceValue="$5.00";
+		Assert.assertEquals(priceValue, expectedPriceValue,"values are not matching");
 		CommonMethods.justclick(checkoutpage.Checkoutbutton);
+//		CommonMethods.entertext(checkoutpage.Adress);
+//		CommonMethods.justclick(checkoutpage.City);
+//		CommonMethods.justclick(checkoutpage.State);
+//		CommonMethods.justclick(checkoutpage.Zip);
+//		CommonMethods.justclick(checkoutpage.Phone);
 		
 	}
 

@@ -37,6 +37,7 @@ public class Baseclass {
 
 				driver.manage().window().maximize();
 				driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME ,TimeUnit.SECONDS);
+				driver.manage().deleteAllCookies();
 				driver.get(Configsreader.getproperty("url"));
 				// initialize all page objects as part of setup
 				
@@ -47,7 +48,7 @@ Pageinitializer.initialise();
 	@AfterMethod
 	public void teardown() {
 		if(driver!=null) {
-			driver.quit();
+			//driver.quit();
 		}
 	}
 		

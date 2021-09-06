@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31469" started-at="2021-08-12T06:08:27Z" finished-at="2021-08-12T06:08:58Z">
+  <suite name="Default suite" duration-ms="34324" started-at="2021-09-06T18:11:26Z" finished-at="2021-09-06T18:12:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31469" started-at="2021-08-12T06:08:27Z" finished-at="2021-08-12T06:08:58Z">
+    <test name="Default test" duration-ms="34324" started-at="2021-09-06T18:11:26Z" finished-at="2021-09-06T18:12:00Z">
       <class name="com.guru99.testCases.CheckoutPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru99.testCases.CheckoutPageTest@464bee09]" name="setUp" is-config="true" duration-ms="6795" started-at="2021-08-12T06:08:27Z" finished-at="2021-08-12T06:08:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru99.testCases.CheckoutPageTest@754ba872]" name="setUp" is-config="true" duration-ms="7342" started-at="2021-09-06T18:11:26Z" finished-at="2021-09-06T18:11:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Testcase_006()[pri:0, instance:com.guru99.testCases.CheckoutPageTest@464bee09]" name="Testcase_006" duration-ms="23844" started-at="2021-08-12T06:08:34Z" finished-at="2021-08-12T06:08:58Z">
+        <test-method status="PASS" signature="Testcase_006()[pri:0, instance:com.guru99.testCases.CheckoutPageTest@754ba872]" name="Testcase_006" duration-ms="26932" started-at="2021-09-06T18:11:33Z" finished-at="2021-09-06T18:12:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testcase_006 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.testCases.CheckoutPageTest@464bee09]" name="teardown" is-config="true" duration-ms="795" started-at="2021-08-12T06:08:58Z" finished-at="2021-08-12T06:08:58Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.testCases.CheckoutPageTest@754ba872]" name="teardown" is-config="true" duration-ms="0" started-at="2021-09-06T18:12:00Z" finished-at="2021-09-06T18:12:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
