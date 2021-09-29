@@ -26,7 +26,7 @@ public class CheckoutPageTest extends CommonMethods{
 		
 		
 		
-//		CommonMethods.justclick(checkoutpage.Shippingcostflatrate);
+		CommonMethods.justclick(checkoutpage.Shippingcostflatrate);
 		CommonMethods.justclick(checkoutpage.Updatetotal);
 		String priceValue=CommonMethods.getText(checkoutpage.priceValue);
 		//System.out.println(priceValue);
@@ -38,7 +38,18 @@ public class CheckoutPageTest extends CommonMethods{
 //		CommonMethods.justclick(checkoutpage.State);
 //		CommonMethods.justclick(checkoutpage.Zip);
 //		CommonMethods.justclick(checkoutpage.Phone);
+		CommonMethods.justclick(checkoutpage.Continueinbillingadd);
 		
+		CommonMethods.justclick(checkoutpage.Continueinshippingmethod);
+		CommonMethods.justclick(checkoutpage.Paymentradiobutton);
+		CommonMethods.justclick(checkoutpage.Continueinpaymentmethod);
+		CommonMethods.justclick(checkoutpage.Placeorder);
+String actualtext=		CommonMethods.getText(checkoutpage.Textgerated);
+		
+		Assert.assertEquals(actualtext, "THANK YOU FOR YOUR PURCHASE!");
+		String ordid=CommonMethods.getText(checkoutpage.orderid);
+		
+		System.out.println("my order id "+ordid);
 	}
 
 }

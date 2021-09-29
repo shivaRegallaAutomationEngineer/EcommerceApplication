@@ -44,7 +44,7 @@ public class CheckoutPageElements extends Baseclass{
 	public WebElement Zip;
 	@FindBy(xpath="//input[@id='billing:telephone']")
 	public WebElement Phone;
-	@FindBy(xpath="//span[@id='billing-please-wait']")
+	@FindBy(xpath="//button[@onclick='billing.save()']")
 	public WebElement Continueinbillingadd;
 	@FindBy(xpath="(//button[@title='Continue'])[2]")
 	public WebElement Continueinshippingadd ;
@@ -63,6 +63,8 @@ public class CheckoutPageElements extends Baseclass{
 public WebElement flatrate;
 @FindBy(xpath="//table[@id='shopping-cart-totals-table']//tbody//tr[2]//td[2]//span")
 public WebElement priceValue;
+@FindBy(xpath="(//div[@class='page-title']//following::p//a)[1]")
+public WebElement orderid;
 
 
 	public CheckoutPageElements() {
