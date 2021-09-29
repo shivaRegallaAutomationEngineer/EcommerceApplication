@@ -44,7 +44,7 @@ public class CheckoutPageElements extends Baseclass{
 	public WebElement Zip;
 	@FindBy(xpath="//input[@id='billing:telephone']")
 	public WebElement Phone;
-	@FindBy(xpath="//span[@id='billing-please-wait']")
+	@FindBy(xpath="//button[@onclick='billing.save()']")
 	public WebElement Continueinbillingadd;
 	@FindBy(xpath="(//button[@title='Continue'])[2]")
 	public WebElement Continueinshippingadd ;
@@ -57,7 +57,16 @@ public class CheckoutPageElements extends Baseclass{
 	@FindBy(xpath="//button[@title='Place Order']")
 	public WebElement Placeorder;
 	@FindBy(xpath="//h2[text()='Thank you for your purchase!']")
+	
 	public WebElement Textgerated;
+@FindBy(xpath="//label[@for=\"s_method_flatrate_flatrate\"]")
+public WebElement flatrate;
+@FindBy(xpath="//table[@id='shopping-cart-totals-table']//tbody//tr[2]//td[2]//span")
+public WebElement priceValue;
+@FindBy(xpath="(//div[@class='page-title']//following::p//a)[1]")
+public WebElement orderid;
+
+
 	public CheckoutPageElements() {
 		PageFactory.initElements(driver, this);
 		
